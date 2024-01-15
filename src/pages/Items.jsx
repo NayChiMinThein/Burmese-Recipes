@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import recipes from "../json/BurmeseRecipes.json"
-import defaultImg from "../../public/default.png"
+import defaultImg from "/default.png"
 
 const Items = () => {
   return (
@@ -11,7 +11,7 @@ const Items = () => {
             <Link to={`/details/${recipe.Guid}`} key={recipe.Guid}>
               <div className="flex items-center shadow-md p-4 xl:px-8 xl:py-5 rounded-md">
                 <img 
-                  src={`../../public/${recipe.Name}.jpg`} alt={recipe.Name}
+                  src={`/${recipe.Name}.jpg`} alt={recipe.Name}
                   className="me-4 xl:me-5 w-20 md:w-24 md:h-24 md:rounded-full md:object-cover xl:w-32 xl:h-32"
                   onError={e => {e.target.src = defaultImg}} 
                 />

@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom"
 import { IoArrowBackCircle } from "react-icons/io5";
 import recipes from "../json/BurmeseRecipes.json"
 import userTypes from "../json/UserTypes.json"
-import defaultImg from "../../public/default.png"
+import defaultImg from "/default.png"
 
 const Details = () => {
   const { recipeId } = useParams()
@@ -18,7 +18,7 @@ const Details = () => {
         </button>
       </Link>
       <div className="mt-3 md:flex">
-        <img src={`../../public/${recipe.Name}.jpg`} alt={recipe.Name} 
+        <img src={`/${recipe.Name}.jpg`} alt={recipe.Name} 
           className="mx-auto border-4 border-slate-300 rounded-md p-3 w-56 md:w-64 lg:w-72 xl:w-96 md:h-fit"
           onError={e => {e.target.src = defaultImg}} 
         />
