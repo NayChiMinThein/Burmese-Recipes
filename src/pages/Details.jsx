@@ -3,12 +3,17 @@ import { IoArrowBackCircle } from "react-icons/io5";
 import recipes from "../json/BurmeseRecipes.json"
 import userTypes from "../json/UserTypes.json"
 import defaultImg from "/default.png"
+import { useEffect } from "react";
 
 const Details = () => {
   const { recipeId } = useParams()
 
   const recipe = recipes.find(recipe => recipe.Guid === recipeId)
   const type = userTypes.find(userType => userType.UserCode === recipe.UserType)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   
   return (
     <div className="my-4 md:my-16 md:mx-12 lg:mx-16 xl:mx-28 xl:my-20">
