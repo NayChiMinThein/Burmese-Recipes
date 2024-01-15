@@ -4,7 +4,7 @@ import defaultImg from "/default.png"
 
 const Items = () => {
   return (
-    <div className="my-8 mx-4 md:mx-8 xl:my-12 xl:mx-16">
+    <div className="my-6 mx-4 md:mx-8 xl:my-12 xl:mx-16">
       <div className="grid gap-4 md:gap-6 xl:gap-8 md:grid-cols-2">
         {recipes.map(recipe => {
           return (
