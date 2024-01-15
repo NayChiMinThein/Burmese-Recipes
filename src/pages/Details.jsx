@@ -35,22 +35,22 @@ const Details = () => {
             </button>
           </Link>
           <div className="xl:mt-1">
-            <h2 className="text-2xl xl:text-3xl">For</h2>
+            <h2 className="text-xl md:text-2xl xl:text-3xl">For</h2>
             <p className="xl:text-lg mb-4">{type.UserMMType} Or {type.UserEngType}</p>
           </div>
           <hr />
           <div className="my-4 xl:my-4">
-            <h2 className="text-2xl xl:text-3xl">Menu Name</h2>
+            <h2 className="text-xl md:text-2xl xl:text-3xl">Menu Name</h2>
             <p className="xl:text-lg mt-1">{recipe.Name}</p>
           </div>
           <hr />
           <div className="my-4 xl:mb-4">
-            <h2 className="text-2xl xl:text-3xl">Ingredients</h2>
+            <h2 className="text-xl md:text-2xl xl:text-3xl">Ingredients</h2>
             <p className="xl:text-lg mt-1 leading-7 xl:leading-8">{recipe.Ingredients}</p>
           </div>
           <hr />
           <div className="mt-4">
-            <h2 className="text-2xl xl:text-3xl">How to cook ?</h2>
+            <h2 className="text-xl md:text-2xl xl:text-3xl">How to cook ?</h2>
             <p className="xl:text-lg mt-1 leading-7 xl:leading-8">{recipe.CookingInstructions}</p>
           </div>
         </div>
